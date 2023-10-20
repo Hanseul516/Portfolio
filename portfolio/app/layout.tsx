@@ -17,9 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body className={`${inter.className} bg-gray-50 text-gray-950 relative h-[5000px]`}>
+      <body
+        className={`${inter.className} bg-gray-50 text-gray-950 relative h-[5000px]`}
+      >
         <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]" />
-        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem]
+        <div
+          className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem]
           rounded-full blur-[10em]
           sm:w:[68,75em]
           md:left:[33,75em]
