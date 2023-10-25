@@ -76,27 +76,37 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 trasition" />
         </Link>
 
-        <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition">
+        <a
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+          href="/CV.pdf"
+          download
+        >
           Download CV
-          <HiDownload 
-          className="opacity-60 group-hover:"/>
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
-        <a className="bg-white p-4 flex items-center gap-2 rounded-full">
+        <a
+          className="bg-white p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10"
+          href="https://duseul.tistory.com"
+          target="_blank"
+        >
           <svg
             role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-4 h-4 fill-gray-700"
+            className="w-4 h-4 fill-gray-700 hover:fill-gray-950"
           >
             <path d="M0 3a3 3 0 1 0 6 0 3 3 0 0 0-6 0m9 18a3 3 0 1 0 6 0 3 3 0 0 0-6 0m0-9a3 3 0 1 0 6 0 3 3 0 0 0-6 0m0-9a3 3 0 1 0 6 0 3 3 0 0 0-6 0m9 0a3 3 0 1 0 6 0 3 3 0 0 0-6 0" />
           </svg>
         </a>
 
-        <a className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full">
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+          href="https://github.com/Hanseul516"
+          target="_blank"
+        >
           <FaGithubSquare />
         </a>
-
       </motion.div>
     </section>
   );
