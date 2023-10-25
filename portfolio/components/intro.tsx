@@ -5,6 +5,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
 
 export default function Intro() {
   return (
@@ -58,13 +60,44 @@ export default function Intro() {
         <span className="underline">React (Next.js)</span>. */}
       </motion.h1>
 
-      <div>
-        <Link href="#contact">
+      <motion.div
+        className="flex flex-col sm:flex-row items-center justify-center gap-2.5 px-4 text-lg font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.1,
+        }}
+      >
+        <Link
+          href="#contact"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+        >
           Contact me here
-          <BsArrowRight />
-          {""}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 trasition" />
         </Link>
-      </div>
+
+        <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition">
+          Download CV
+          <HiDownload 
+          className="opacity-60 group-hover:"/>
+        </a>
+
+        <a className="bg-white p-4 flex items-center gap-2 rounded-full">
+          <svg
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-4 h-4 fill-gray-700"
+          >
+            <path d="M0 3a3 3 0 1 0 6 0 3 3 0 0 0-6 0m9 18a3 3 0 1 0 6 0 3 3 0 0 0-6 0m0-9a3 3 0 1 0 6 0 3 3 0 0 0-6 0m0-9a3 3 0 1 0 6 0 3 3 0 0 0-6 0m9 0a3 3 0 1 0 6 0 3 3 0 0 0-6 0" />
+          </svg>
+        </a>
+
+        <a className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full">
+          <FaGithubSquare />
+        </a>
+
+      </motion.div>
     </section>
   );
 }
