@@ -55,9 +55,6 @@ export default function Intro() {
         <span className="font-bold">안녕하세요, 최한슬입니다.</span>
         <br></br>간호사에서 <span className="font-bold">프론트엔드 개발자</span>
         로의 여정을 시작합니다.
-        {/* <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">React</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>. */}
       </motion.h1>
 
       <motion.div
