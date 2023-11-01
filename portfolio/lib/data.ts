@@ -37,7 +37,7 @@ export const experiencesData = [
     title: "선문대학교 간호학과",
     location: "충청남도, 아산시",
     description:
-      "학점 4.1/4.5 (이수학점/신청학점 142/143)",
+      "학점 4.1/4.5",
     icon: React.createElement(LuGraduationCap),
     date: "2019.03-2023.02",
   },
@@ -53,9 +53,17 @@ export const experiencesData = [
     title: "멀티캠퍼스 프론트엔드 개발자 과정",
     location: "비대면",
     description:
-      "JavaScript, React 기반의 프론트엔드 개발자 부트캠프를 수료했습니다.",
+      "JavaScript, React 기반의 프론트엔드 과정 수료",
     icon: React.createElement(FaReact),
     date: "2023.05 - 2023.10",
+  },
+  {
+    title: "기술 블로그(개발자두슬의 댕발블로그) 운영",
+    location: "티스토리",
+    description:
+      "포스팅 220개, 누적방문자수 10,400명",
+    icon: React.createElement(FaReact),
+    date: "2023.05 - ing",
   },
 ] as const;
 
