@@ -7,10 +7,14 @@ import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import MyImg from "@/public/myIMG.png";
 
 export default function Intro() {
   return (
-    <section className="nb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      id="home"
+      className="nb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -22,13 +26,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1519750783826-e2420f4d687f?auto=format&fit=crop&q=80&w=774&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src={MyImg}
               alt="Hanseul portrait"
               width={192}
               height={192}
               quality={95}
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-24.1 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
           <motion.span
@@ -65,7 +69,6 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
@@ -79,7 +82,7 @@ export default function Intro() {
           href="/CV.pdf"
           download
         >
-          Resume 
+          Resume
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
