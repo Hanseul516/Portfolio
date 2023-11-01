@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -74,7 +74,6 @@ export default function Project({
         group-even:right-[initial] group-even:-left-40"
           />
         </a>
-        )}
       </section>
     </motion.div>
   );

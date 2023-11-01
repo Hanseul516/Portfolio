@@ -34,28 +34,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "선문대학교 간호학과",
+    location: "충청남도, 아산시",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "학점 4.1/4.5 (이수학점/신청학점 142/143)",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2019.03-2023.02",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "한림대학교춘천성심병원",
+    location: "강원도, 춘천시",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "응급실 간호사",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2019.05 - 2019.05",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "멀티캠퍼스 프론트엔드 개발자 과정",
+    location: "비대면",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "JavaScript, React 기반의 프론트엔드 개발자 부트캠프를 수료했습니다.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023.05 - 2023.10",
   },
 ] as const;
 
@@ -98,14 +98,8 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "Bootstrap",
   "Framer Motion",
+  "MySQL",
+  "Python",
 ] as const;
