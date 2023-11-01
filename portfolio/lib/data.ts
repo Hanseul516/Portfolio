@@ -2,8 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import BSImg from "@/public/imsi_BS_IMG.png";
-import PFImg from "@/public/imsi_PF_IMG.png";
+import BSImg from "@/public/BSgif.gif";
+import PFImg from "@/public/PFgif.gif";
 
 export const links = [
   {
@@ -67,7 +67,7 @@ export const projectsData = [
     moreDescription: "React-Responsive 모듈을 사용하여 전 화면을 반응형으로 설계했습니다. 그리고 react-Slick 라이브러리를 사용하여 메인페이지의 새로 올라온 도서 및 실시간 인기 도서 섹션을 구현했습니다.",
     tags: ["HTML/CSS", "React", "Node.js", "MySQL", "AWS ES2"],
     imageUrl: BSImg,
-    GithubUrl: 
+    GithubUrl: "https://github.com/Hanseul516/BookStock",
   },
   {
     title: "Portfolio 포트폴리오",
@@ -76,6 +76,7 @@ export const projectsData = [
     moreDescription: "Tailwind CSS를 사용하여 부드럽고 현대적인 UI를 구현하고자 했습니다. 그리고 Vercel을 이용한 배포를 경험할 수 있었습니다.",
     tags: ["Next.js", "Typescript", "Tailwind CSS", "Vercel"],
     imageUrl: PFImg,
+    GithubUrl: "https://github.com/Hanseul516/Portfolio",
   },
 
   // {
