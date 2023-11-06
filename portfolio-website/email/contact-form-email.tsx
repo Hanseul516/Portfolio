@@ -24,7 +24,7 @@ export default function ContactFormEmail({
   return (
     <Html>
       <Head />
-      <Preview>포트폴리오에서 온 새로운 메일!</Preview>
+      <Preview>포트폴리오에서 온 새로운 메일입니다!</Preview>
       <Tailwind>
         <Body className="bg-gray-100 text-black">
           <Container>
